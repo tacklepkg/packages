@@ -1,0 +1,24 @@
+http-redirects {
+    description "A wrapper for tcllib http::geturl that handles redirects."
+    type "package"
+    url https://github.com/tacklepkg/packages/raw/master/http-redirects/http-redirects.tar.gz
+    version 1.0.0
+}
+tcllib {
+    description "The Tcl standard library."
+    type "package"
+    url https://core.tcl-lang.org/tcllib/uv/tcllib-1.20.tar.gz
+    version 1.20
+}
+tcltls {
+    description "This extension provides a generic binding to OpenSSL."
+    type "package"
+    url https://core.tcl-lang.org/tcltls/uv/tcltls-1.7.22.tar.gz
+    version 1.7.22
+}
+tutstack {
+    description "An example Tcl package that implements a simple data structure"
+    type "package"
+    url https://github.com/tacklepkg/packages/raw/master/tutstack/tutstack.tar.gz
+    version 1.0.0
+}
