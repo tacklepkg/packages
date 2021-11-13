@@ -9,16 +9,15 @@ tcllib {
     type "package"
     url https://core.tcl-lang.org/tcllib/uv/tcllib-1.20.tar.gz
     version 1.20
-    setup {
-      cd tcllib-1.20
-      mkdir foo
-      ./configure --prefix="$pwd/foo"
-      make
-      make install
-      cp -r foo/lib/tcllib1.20 ..
-      cd ..
-      rm -rf tcllib-1.20
-    }
+    setup "
+        cd $unpacked
+        ./configure --prefix=$unpacked/tmp
+        make
+        make install
+        cp -r $unpacked/tmp/lib/tcllib1.20 ..
+        cd ..
+        rm -rf $unpacked
+    "
 }
 tcltls {
     description "This extension provides a generic binding to OpenSSL."
