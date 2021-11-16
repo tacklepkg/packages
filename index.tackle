@@ -27,7 +27,7 @@ tcltls {
     version 1.7.22
 }
 tutstack {
-    description "An example Tcl package that implements a simple data structure"
+    description "An example Tcl package that implements a stack data structure"
     type "package"
     url https://github.com/tacklepkg/packages/raw/master/tutstack/tutstack.tar.gz
     version 1.0.0
